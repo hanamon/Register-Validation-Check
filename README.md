@@ -1,5 +1,7 @@
 # validation-check
 
+[구현은 여기에서 확인하실 수 있습니다.](https://hanamon.github.io/Register-Validation-Check/)
+
 ### HTML에서 id와 class 명은 지정해줬다.
 
 - 목적 selector
@@ -37,9 +39,9 @@
 - ~~모든 조건이 충족됐을 때, 회원가입 버튼 배경 색상이 활성화가 되게한다. + 팝업창 + 모든 것이 초기화~~
 - ~~만약 조건이 충족되지 않았을 때는 회원가입 버튼 클릭시 에러 메세지 팝업 창이 뜬다.~~
 
-#### }
+### }
 
-#### 혼자 추가 기능 구현
+### 혼자 추가 기능 구현
 - ~~스타일 : 성공 메세지 공통 클래스 추가 HTML addClass (color: green)~~
 
 - ~~비밀번호 : 사용 가능 메시지 출력 (HTML DOM)~~
