@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유효성 검사</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validator.js"></script>
+</head>
+
+<body>
+  <h1>유효성 검사</h1>
+  <div id='form-container'>
+    <h2>회원가입</h2>
+
+    <fieldset>
+      <label>아이디<span>*</span></label>
+      <input type="text" id='username' placeholder="아이디를 입력해주세요.">
+      <div class='failure-message hide msg'>4자 이상의 영문 혹은 영문과 숫자를 조합</div>
+      <div class='success-message hide msg success'>사용할 수 있는 아이디입니다.</div>
+    </fieldset>
+
+    <fieldset>
+      <label>비밀번호<span>*</span></label>
+      <input type="text" id='password' placeholder="비밀번호를 입력해주세요.">
+      <div class='password-message-wrap'>
+        <span class='password-failure-length hide msg'>10자 이상 입력</span>
+        <span class='password-failure-comb hide msg'>영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</span>
+        <span class='password-failure-contn hide msg'>동일한 숫자 3개 이상 연속 사용 불가</span>
+        <span class='password-failure-upper hide msg'>영어 대문자 하나 이상 포함</span>
+        <span class='password-success-message hide msg success'>사용할 수 있는 비밀번호입니다.</span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label>비밀번호 확인<span>*</span></label>
+      <input type="text" id='password-retype' placeholder="비밀번호를 한번 더 입력해주세요.">
+      <div class="mismatch-message hide msg">동일한 비밀번호를 입력해주세요.</div>
+      <div class="match-message hide msg success">동일한 비밀번호가 입력되었습니다.</div>
+    </fieldset>
+
+    <button id="subit-button">회원가입</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
